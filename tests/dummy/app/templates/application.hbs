@@ -1,3 +1,23 @@
-<h2 id="title">Welcome to Ember</h2>
+<h1>Ember BufferedProxy Component</h1>
 
-{{outlet}}
+<p><strong>Name on model:</strong> {{model.name}}</p>
+
+<hr>
+
+{{#buffered-proxy content=model as |content apply discard hasChanges|}}
+  <p><strong>Name inside buffered proxy:</strong> {{content.name}}</p>
+  <p>
+    {{input
+        value=content.name
+        insert-newline=apply
+        escape-press=discard
+    }}
+  </p>
+
+  <p>
+    <button {{action apply}}>Apply</button>
+    <button {{action discard}}>Discard</button>
+  </p>
+
+  <p><strong>Has changes:</strong> {{hasChanges}}</p>
+{{/buffered-proxy}}
