@@ -1,4 +1,4 @@
-# Ember BufferedProxy Component
+# Ember BufferedProxy Component [![Build Status](https://travis-ci.org/zeppelin/ember-buffered-proxy-component.svg)](https://travis-ci.org/zeppelin/ember-buffered-proxy-component)
 
 An Ember Component that uses [BufferedProxy](https://github.com/yapplabs/ember-buffered-proxy)
 to enable change buffering at the view level.
