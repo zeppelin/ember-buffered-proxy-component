@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/zeppelin/ember-object-proxy-component",
+  "repository": "https://github.com/zeppelin/ember-buffered-proxy-component",
   "engines": {
     "node": ">= 0.10.0"
   },
